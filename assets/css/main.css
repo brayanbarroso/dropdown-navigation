@@ -1,0 +1,68 @@
+:root {
+  --Almost-White: hsl(0, 0%, 98%);
+  --Medium-Gray: hsl(0, 0%, 41%);
+  --Almost-Black: hsl(0, 0%, 8%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+  font-size: 18px;
+}
+
+/* Menu-mobile */
+
+.menu {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.menu-desktop {
+  display: none;
+}
+
+/* Section- */
+.section-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.section-description {
+  margin-block-start: 24px;
+  padding-inline: 8px;
+  text-align: center;
+}
+
+.section-description h1 {
+  color: var(--Almost-Black);
+  font-size: 36px;
+}
+
+.section-description p {
+  color: var(--Medium-Gray);
+  font-size: 17px;
+  line-height: 24px;
+  margin-block: 24px;
+}
+
+.section-img img {
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+/* Footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
