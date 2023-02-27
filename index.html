@@ -17,56 +17,125 @@
       href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="./assets/css/main.css" />
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
   <body>
-    <header>
-      <nav class="menu">
-        <div class="logo">
-          <img src="./assets/img/logo.svg" alt="Logo" />
-        </div>
-        <div class="menu-movil">
-          <img
-            src="./assets/img/icon-menu.svg"
-            alt="Icono de menu dispositivos mobiles"
-          />
-          <ul class="menu-desktop">
-            <li>
-              <a href="#">
-                Features
+    <header class="container">
+      <nav class="nav">
+        <!-- Logo -->
+        <img
+          class="nav__img"
+          src="./assets/img/logo.svg"
+          alt="Logo de la pagina"
+        />
+        <!-- Icono menu hamburguesa -->
+        <div class="nav__hamburguer"></div>
+        <!-- Menu -->
+        <div class="nav__overlay">
+          <ul class="nav__menu">
+            <li class="nav__item">
+              <span class="nav__parent"
+                >Features
                 <img
                   src="./assets/img/icon-arrow-down.svg"
-                  alt="flecha hacia arriba"
-              /></a>
-              <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
+                  alt="Icono flecha despliegue menu"
+                  class="nav__arrow"
+                />
+              </span>
+              <!-- dropdown -->
+              <ul class="nav__inner">
+                <li class="nav__dropdown">
+                  <a href="#" class="nav__link">
+                    <img
+                      class="nav__ilustration"
+                      src="./assets/img/icon-todo.svg"
+                      alt="Icono Libreta de tareas"
+                    />
+                    Todo List
+                  </a>
+                </li>
+
+                <li class="nav__dropdown">
+                  <a href="#" class="nav__link">
+                    <img
+                      class="nav__ilustration"
+                      src="./assets/img/icon-calendar.svg"
+                      alt="Icono Calendario"
+                    />
+                    Calendar
+                  </a>
+                </li>
+
+                <li class="nav__dropdown">
+                  <a href="#" class="nav__link">
+                    <img
+                      class="nav__ilustration"
+                      src="./assets/img/icon-reminders.svg"
+                      alt="Icono Calendario"
+                    />
+                    Reminder
+                  </a>
+                </li>
+
+                <li class="nav__dropdown">
+                  <a href="#" class="nav__link">
+                    <img
+                      class="nav__ilustration"
+                      src="./assets/img/icon-planning.svg"
+                      alt="Icono Calendario"
+                    />
+                    Planning
+                  </a>
+                </li>
               </ul>
             </li>
-            <li>
-              <a href="#">
-                Company
+
+            <li class="nav__item">
+              <span class="nav__parent"
+                >Company
                 <img
                   src="./assets/img/icon-arrow-down.svg"
-                  alt="flecha hacia arriba"
+                  alt="Icono flecha despliegue menu"
+                  class="nav__arrow"
                 />
-              </a>
+              </span>
+              <!-- dropdown -->
+              <ul class="nav__inner">
+                <li class="nav__dropdown">
+                  <a href="#" class="nav__link">History</a>
+                </li>
+                <li class="nav__dropdown">
+                  <a href="#" class="nav__link">Our Team</a>
+                </li>
+                <li class="nav__dropdown">
+                  <a href="#" class="nav__link">Blog</a>
+                </li>
+              </ul>
             </li>
-            <li>Careers</li>
-            <li>About</li>
-            <ul>
-              <li>Login</li>
-              <li>Register</li>
-            </ul>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link">Careers</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link">About</a>
+            </li>
+
+            <li class="nav__login">
+              <a href="#" class="nav__sign">Login</a>
+            </li>
+
+            <li class="nav__login nav__login--border">
+              <a href="#" class="nav__sign">Register</a>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <section>
+    <!-- <section>
       <div class="section-container">
         <div class="section-description">
           <h1>Make remote work</h1>
@@ -92,7 +161,7 @@
           </picture>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <footer>
       <div class="attribution">
