@@ -199,6 +199,7 @@ footer {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
@@ -259,5 +260,58 @@ footer {
   .nav__inner--show {
     opacity: 1;
     pointer-events: unset;
+  }
+
+  .nav__login {
+    margin: 0;
+    margin-left: auto;
+    width: max-content;
+  }
+
+  .nav__login--border {
+    margin: 0;
+    padding: 0 1.5em;
+  }
+
+  /* main--Desktop */
+  .main__section {
+    gap: 2em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "text img";
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 70px 0;
+    width: 90%;
+  }
+
+  .main__picture {
+    max-height: 500px;
+  }
+
+  .main__img {
+    height: 100%;
+  }
+
+  .main__article {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    text-align: left;
+  }
+
+  .main__brands {
+    margin: auto 0 0 0;
+  }
+
+  .main__texts {
+    margin: auto 0;
+  }
+
+  .main__title {
+    font-size: 3.5rem;
+  }
+
+  .main__paragraph {
+    margin: 2em 0;
   }
 }
