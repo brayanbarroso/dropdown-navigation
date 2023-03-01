@@ -9,7 +9,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./assets/img/favicon-32x32.png"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -135,40 +135,60 @@
       </nav>
     </header>
 
-    <!-- <section>
-      <div class="section-container">
-        <div class="section-description">
-          <h1>Make remote work</h1>
-          <p>
-            Get your team in sync, no matter your location. Streamline
-            processes, create team rituals, and watch productivity soar.
-          </p>
-          <a href="#" class="description-button">Learn more</a>
-          <div class="description-banner">
-            <img src="./assets/img/client-databiz.svg" alt="" />
-            <img src="./assets/img/client-audiophile.svg" alt="" />
-            <img src="./assets/img/client-meet.svg" alt="" />
-            <img src="./assets/img/client-maker.svg" alt="" />
+    <main class="main">
+      <section class="main__section">
+        <picture class="main__picture">
+          <source
+            media="(min-width: 768px)"
+            srcset="./assets/img/image-hero-desktop.png"
+            class="main__img" />
+          <img
+            src="./assets/img/image-hero-mobile.png"
+            alt="Imagen de version mobil proyecto"
+            class="main__img"
+        /></picture>
+        <article class="main__article">
+          <div class="main__texts">
+            <h1 class="main__title">Make remote work</h1>
+            <p class="main__paragraph">
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <a href="#" class="main__button">Learn more</a>
           </div>
-        </div>
-        <div class="section-img">
-          <picture>
-            <source
-              media="(max-width: 780px)"
-              srcset="./assets/img/image-hero-mobile.png"
+
+          <div class="main__brands">
+            <img
+              class="main__brand"
+              src="./assets/img/client-databiz.svg"
+              alt=""
             />
-            <img src="./assets/img/image-hero-desktop.png" alt="" />
-          </picture>
-        </div>
-      </div>
-    </section> -->
+            <img
+              class="main__brand"
+              src="./assets/img/client-audiophile.svg"
+              alt=""
+            />
+            <img
+              class="main__brand"
+              src="./assets/img/client-meet.svg"
+              alt=""
+            />
+            <img
+              class="main__brand"
+              src="./assets/img/client-maker.svg"
+              alt=""
+            />
+          </div>
+        </article>
+      </section>
+    </main>
 
     <footer>
       <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="#">Brayan Barroso</a>.
       </div>
     </footer>
 
